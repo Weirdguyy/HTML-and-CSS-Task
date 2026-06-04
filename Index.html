@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLABVAULT — Jasa Grading Kartu Koleksi</title>
+  <meta name="description" content="Jasa grading & autentikasi kartu koleksi profesional. Aman, transparan, dan presisi." />
+
+  <!-- Fonts (External, via Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Grain / noise overlay buat atmosfer -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="logo">
+        <span class="logo__mark">◈</span> SLAB<span class="logo__accent">VAULT</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#proses">Proses</a>
+        <a href="#harga">Harga</a>
+        <a href="#kenapa">Kenapa Kami</a>
+        <a href="#ulasan">Ulasan</a>
+      </nav>
+      <a href="#harga" class="btn btn--solid nav__cta">Mulai Grading</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow reveal">Grading &amp; Autentikasi Kartu Koleksi</span>
+        <h1 class="hero__title reveal" style="--d:.08s">
+          Kartu favoritmu pantas dapat <em>slab</em> terbaik.
+        </h1>
+        <p class="hero__lede reveal" style="--d:.16s">
+          SLABVAULT mengubah kartu mentah jadi aset yang terlindungi seumur hidup —
+          dinilai presisi sub-grade, di-encapsulasi, dan diverifikasi keasliannya.
+        </p>
+        <div class="hero__actions reveal" style="--d:.24s">
+          <a href="#harga" class="btn btn--solid">Lihat Paket Grading</a>
+          <a href="#proses" class="btn btn--ghost">Cara Kerjanya →</a>
+        </div>
+        <div class="hero__trust reveal" style="--d:.32s">
+          <div><strong>120K+</strong><span>kartu di-grade</span></div>
+          <div class="divider"></div>
+          <div><strong>10 hari</strong><span>turnaround rata-rata</span></div>
+          <div class="divider"></div>
+          <div><strong>100%</strong><span>garansi asuransi</span></div>
+        </div>
+      </div>
+
+      <!-- Kartu contoh: di-slab + overlay holografik via CSS -->
+      <div class="hero__card-wrap reveal" style="--d:.4s">
+        <div class="slab">
+          <div class="slab__label">
+            <span class="slab__brand">SLABVAULT</span>
+            <span class="slab__grade">GEM MINT</span>
+            <span class="slab__score">10</span>
+          </div>
+          <div class="card">
+            <img class="card__img" src="assets/card.jpg" alt="Kartu Mega Gengar ex dalam slab grading" />
+            <div class="card__holo"></div>
+            <div class="card__shine"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROSES ===== -->
+  <section class="section" id="proses">
+    <div class="container">
+      <header class="section__head">
+        <span class="eyebrow">Prosesnya</span>
+        <h2 class="section__title">Empat langkah, nol drama.</h2>
+        <p class="section__sub">Dari kotak penyimpanan kamu sampai kembali dalam slab tahan benturan.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Kirim kartumu</h3>
+          <p>Daftar online, isi form kartu, lalu kirim aman ke fasilitas kami dengan label terlindungi.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Cek keaslian</h3>
+          <p>Tim verifikasi memeriksa keaslian di bawah pembesaran &amp; sinar UV untuk mendeteksi pemalsuan.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Penilaian presisi</h3>
+          <p>Empat sub-grade — centering, corners, edges, surface — dirangkum jadi satu skor akhir.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">04</span>
+          <h3>Encapsulasi</h3>
+          <p>Kartu disegel dalam slab bebas asam, dilabeli, dan dikirim balik berasuransi penuh.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== HARGA ===== -->
+  <section class="section section--alt" id="harga">
+    <div class="container">
+      <header class="section__head">
+        <span class="eyebrow">Paket</span>
+        <h2 class="section__title">Pilih tier sesuai nilai kartumu.</h2>
+        <p class="section__sub">Semua tier termasuk encapsulasi, label digital, &amp; asuransi pengiriman.</p>
+      </header>
+
+      <div class="pricing">
+        <article class="plan">
+          <h3 class="plan__name">Standard</h3>
+          <p class="plan__price"><span>Rp</span>149<small>rb / kartu</small></p>
+          <p class="plan__desc">Buat koleksi harian &amp; kartu nilai menengah.</p>
+          <ul class="plan__list">
+            <li>Turnaround 20 hari kerja</li>
+            <li>Asuransi s.d. Rp5 juta</li>
+            <li>Label &amp; sub-grade lengkap</li>
+            <li>Verifikasi keaslian dasar</li>
+          </ul>
+          <a href="#" class="btn btn--ghost plan__cta">Pilih Standard</a>
+        </article>
+
+        <article class="plan plan--featured">
+          <span class="plan__badge">Paling Populer</span>
+          <h3 class="plan__name">Express</h3>
+          <p class="plan__price"><span>Rp</span>349<small>rb / kartu</small></p>
+          <p class="plan__desc">Buat kartu langka yang pengin cepat balik.</p>
+          <ul class="plan__list">
+            <li>Turnaround 7 hari kerja</li>
+            <li>Asuransi s.d. Rp25 juta</li>
+            <li>Foto resolusi tinggi 2 sisi</li>
+            <li>Verifikasi UV + pembesaran</li>
+            <li>Prioritas antrian</li>
+          </ul>
+          <a href="#" class="btn btn--solid plan__cta">Pilih Express</a>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__name">Vault Elite</h3>
+          <p class="plan__price"><span>Rp</span>899<small>rb / kartu</small></p>
+          <p class="plan__desc">Buat grail &amp; kartu investasi bernilai tinggi.</p>
+          <ul class="plan__list">
+            <li>Turnaround 3 hari kerja</li>
+            <li>Asuransi s.d. Rp250 juta</li>
+            <li>Slab premium anti-UV</li>
+            <li>Sertifikat keaslian fisik</li>
+            <li>Konsultan grading pribadi</li>
+          </ul>
+          <a href="#" class="btn btn--ghost plan__cta">Pilih Vault Elite</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KENAPA KAMI ===== -->
+  <section class="section" id="kenapa">
+    <div class="container">
+      <header class="section__head">
+        <span class="eyebrow">Kenapa SLABVAULT</span>
+        <h2 class="section__title">Dibangun untuk kolektor yang serius.</h2>
+      </header>
+
+      <div class="features">
+        <div class="feature">
+          <span class="feature__icon">🔍</span>
+          <h3>Penilaian Konsisten</h3>
+          <p>Dua grader independen menilai tiap kartu, lalu skor direkonsiliasi untuk meminimalkan bias.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">🛡️</span>
+          <h3>Slab Anti-Pemalsuan</h3>
+          <p>Setiap slab punya hologram serial unik yang bisa diverifikasi langsung lewat database publik.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">📦</span>
+          <h3>Tracking Transparan</h3>
+          <p>Pantau status kartumu real-time di tiap tahap, dari diterima sampai dikirim balik.</p>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">⚡</span>
+          <h3>Turnaround Cepat</h3>
+          <p>Pipeline yang efisien bikin waktu tunggu jauh lebih pendek tanpa mengorbankan ketelitian.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ULASAN ===== -->
+  <section class="section section--alt" id="ulasan">
+    <div class="container">
+      <header class="section__head">
+        <span class="eyebrow">Ulasan</span>
+        <h2 class="section__title">Dipercaya ribuan kolektor.</h2>
+      </header>
+
+      <div class="quotes">
+        <figure class="quote">
+          <p>"Kartu grail-ku balik dengan slab yang super bersih dan skor yang fair. Prosesnya transparan banget."</p>
+          <figcaption><span class="quote__avatar">R</span> Rama A. — Kolektor TCG</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>"Tracking real-time-nya bikin tenang. Nggak perlu nebak-nebak kartuku lagi di mana."</p>
+          <figcaption><span class="quote__avatar">N</span> Nadia P. — Investor Kartu</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>"Tier Express worth it. 7 hari kartu udah balik dengan foto resolusi tinggi. Recommended."</p>
+          <figcaption><span class="quote__avatar">D</span> Dimas K. — Reseller</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA AKHIR ===== -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Siap mengabadikan koleksimu?</h2>
+      <p>Daftar hari ini dan dapat diskon 20% untuk lima kartu pertamamu.</p>
+      <a href="#harga" class="btn btn--solid btn--lg">Mulai Grading Sekarang</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="logo"><span class="logo__mark">◈</span> SLAB<span class="logo__accent">VAULT</span></a>
+        <p>Jasa grading &amp; autentikasi kartu koleksi.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Layanan</h4>
+          <a href="#harga">Paket Grading</a>
+          <a href="#proses">Cara Kerja</a>
+          <a href="#">Cek Slab</a>
+        </div>
+        <div>
+          <h4>Perusahaan</h4>
+          <a href="#">Tentang</a>
+          <a href="#ulasan">Ulasan</a>
+          <a href="#">Karier</a>
+        </div>
+        <div>
+          <h4>Bantuan</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Kontak</a>
+          <a href="#">Lacak Pesanan</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2025 SLABVAULT. Dibuat untuk tugas Landing Page HTML &amp; CSS.</span>
+      <span>Desain &amp; kode oleh Dafa.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
